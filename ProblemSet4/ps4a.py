@@ -78,7 +78,7 @@ def getWordScore(word, n):
         for key, value in SCRABBLE_LETTER_VALUES.items():
             if key == i:
                 wordScore += value
-    wordScore * len(word)
+    wordScore = wordScore * len(word)
     if len(word) == n:
         wordScore += 50
     return wordScore
