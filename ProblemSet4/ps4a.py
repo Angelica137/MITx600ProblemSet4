@@ -157,7 +157,7 @@ def updateHand(hand, word):
     """
     newHand = hand.copy()
     for char in word:
-        if char in newHand.keys() and newHand[char] > 0:
+        if char in newHand.keys():
             newHand[char] -= 1
     return newHand
 
@@ -178,12 +178,18 @@ def isValidWord(word, hand, wordList):
     hand: dictionary (string -> int)
     wordList: list of lowercase strings
     """
-    # TO DO ... <-- Remove this comment when you code this function
+    if word in wordList:
+        for char in word:
+            if char in updateHand(hand, word).keys() and updateHand(hand, word)[char] >= 0:
+                return True
+            else:
+                return False
 
 
 #
 # Problem #4: Playing a hand
 #
+
 
 def calculateHandlen(hand):
     """
