@@ -61,3 +61,7 @@ Enter word, or a "." to indicate that you are finished: inertia
 Run out of letters. Total score: 99 points.
 
 Enter n to deal a new hand, r to replay the last hand, or e to end game: e
+
+### Notes
+
+for problem 3: This function (isValidWord) shouldn't use the function 'updateHand' - you don't want to mutate the hand within this function. A really helpful function is `getFrequencyDict` - this helper function is key to the solution to this problem.
