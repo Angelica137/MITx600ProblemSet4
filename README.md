@@ -74,3 +74,5 @@ Problem 3: Implement hte isValidWord function to ensure the word the user enters
 for problem 3: This function (isValidWord) shouldn't use the function 'updateHand' - you don't want to mutate the hand within this function. A really helpful function is `getFrequencyDict` - this helper function is key to the solution to this problem.
 
 Problem 4: Implement the function calcualteHandlen that returns the number of letters in the current hand.
+
+Problem 5: Implement the playHand function to allow the user to play out a single hand.
