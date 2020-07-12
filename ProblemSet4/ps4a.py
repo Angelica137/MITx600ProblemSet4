@@ -190,16 +190,6 @@ def isValidWord(word, hand, wordList):
         return False
 
 
-'''				
-				for char in word:
-
-            if char in updateHand(hand, word).keys() and updateHand(hand, word)[char] >= 0:
-                return True
-            else:
-                return False
-'''
-
-
 #
 # Problem #4: Playing a hand
 #
@@ -212,7 +202,11 @@ def calculateHandlen(hand):
     hand: dictionary (string-> int)
     returns: integer
     """
-    # TO DO... <-- Remove this comment when you code this function
+    count = 0
+    for key, value in hand.items():
+        if hand[key] > 0:
+            count += value
+    return count
 
 
 def playHand(hand, wordList, n):
@@ -292,40 +286,3 @@ def playGame(wordList):
 if __name__ == '__main__':
     wordList = loadWords()
     playGame(wordList)
-
-
-hand = {'k': 1, 'i': 2, 'o': 1, 'b': 1, 'w': 1, 'j': 1}
-word = "kwijibo"
-print("hand" + str(hand))
-print("frequency" + str(getFrequencyDict(word)))
-print("updateHand" + str(updateHand(hand, word)))
-print(isValidWord(word, hand, wordList))
-print("---------------\n")
-
-hand = {'c': 2, 'h': 1, 'a': 1, 't': 2, 'o': 2, 'u': 2, 'y': 1, 'z': 1}
-word = "chayote"
-print("hand" + str(hand))
-print("e" in hand.keys())
-print("frequency" + str(getFrequencyDict(word)))
-print("updateHand" + str(updateHand(hand, word)))
-print(isValidWord(word, hand, wordList))
-print("---------------\n")
-
-hand = {'r': 1, 'h': 1, 'a': 1, 'm': 2, 'e': 1}
-word = "hammer"
-print("hand" + str(hand))
-print("e" in hand.keys())
-print("frequency" + str(getFrequencyDict(word)))
-print("updateHand" + str(updateHand(hand, word)))
-print(isValidWord(word, hand, wordList))
-print("---------------\n")
-
-
-hand = {'a': 3, 'p': 2, 't': 1, 'e': 1, 'r': 1, 'u': 1}
-word = "rapture"
-print("hand" + str(hand))
-print("e" in hand.keys())
-print("frequency" + str(getFrequencyDict(word)))
-print("updateHand" + str(updateHand(hand, word)))
-print(isValidWord(word, hand, wordList))
-print("---------------\n")

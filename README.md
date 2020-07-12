@@ -64,4 +64,13 @@ Enter n to deal a new hand, r to replay the last hand, or e to end game: e
 
 ### Notes
 
+Problem 1: Word Scores
+Implement code that allows to calcualte the score of a single word using the functoin getWordScore.
+
+Prblem 2: Implement the function updateHand function to update the letters avalaibel to hte player once they have entered a word.
+
+Problem 3: Implement hte isValidWord function to ensure the word the user enters is valid as per the hand they were dealt or the letters they have left.
+
 for problem 3: This function (isValidWord) shouldn't use the function 'updateHand' - you don't want to mutate the hand within this function. A really helpful function is `getFrequencyDict` - this helper function is key to the solution to this problem.
+
+Problem 4: Implement the function calcualteHandlen that returns the number of letters in the current hand.

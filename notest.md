@@ -34,3 +34,11 @@ print("frequency" + str(getFrequencyDict(word)))
 print("updateHand" + str(updateHand(hand, word)))
 print(isValidWord(word, hand, wordList))
 print("---------------\n")
+
+- tests CalculateHandLen
+
+print(calculateHandlen({'b': 1, 'a': 1}))
+should print 2
+print(calculateHandlen({'f': 1, 'i': 1, 'y': 4,
+'z': 1, 'a': 1, 'h': 2, 'q': 1, 'e': 2, 'm': 1}))
+should print 14
