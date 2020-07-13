@@ -105,9 +105,6 @@ def displayHand(hand):
             handDisplay.append(letter)
     s = " "
     return s.join(handDisplay)
-    # return handDisplay
-    # print(letter, end=" ")       # print all on the same line
-    # print an empty line
 
 #
 # Problem #2: Make sure you understand how this function works and what it does!
