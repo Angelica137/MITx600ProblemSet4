@@ -13,7 +13,8 @@ Enter word, or a "." to indicate that you are finished: cam
 
 Current Hand: z
 Enter word, or a "." to indicate that you are finished: .
-Goodbye! Total score: 45 points.  
+Goodbye! Total score: 45 points.
+
 Case #2
 Function Call:
 wordList = loadWords()
@@ -31,7 +32,8 @@ Current Hand: a s t f
 Enter word, or a "." to indicate that you are finished: fast
 "fast" earned 28 points. Total: 46 points
 
-Run out of letters. Total score: 46 points.  
+Run out of letters. Total score: 46 points.
+
 Case #3
 Function Call:
 wordList = loadWords()
@@ -42,5 +44,6 @@ Enter word, or a "." to indicate that you are finished: inertia
 "inertia" earned 99 points. Total: 99 points
 
 Run out of letters. Total score: 99 points.
+
 Additional Testing
 Be sure that, in addition to the listed tests, you test the same basic test conditions with varying values of n. n will never be smaller than the number of letters in the hand.

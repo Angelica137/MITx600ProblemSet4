@@ -99,10 +99,15 @@ def displayHand(hand):
 
     hand: dictionary (string -> int)
     """
+    handDisplay = list()
     for letter in hand.keys():
-        for j in range(hand[letter]):
-            print(letter, end=" ")       # print all on the same line
-    print()                             # print an empty line
+        for i in range(hand[letter]):
+            handDisplay.append(letter)
+    s = " "
+    return s.join(handDisplay)
+    # return handDisplay
+    # print(letter, end=" ")       # print all on the same line
+    # print an empty line
 
 #
 # Problem #2: Make sure you understand how this function works and what it does!
@@ -233,7 +238,7 @@ def playHand(hand, wordList, n):
     """
     totalScore = 0
     # As long as there are still letters left in the hand Display the hand
-    print(displayHand(hand))
+    print("Current Hand: " + str(displayHand(hand)))
     # Ask user for input
     word = input("Enter a word or a . if you are done: \n")
     print(word)
