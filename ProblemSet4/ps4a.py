@@ -237,7 +237,6 @@ def playHand(hand, wordList, n):
         print('Current Hand: ', end='')
         displayHand(hand)
         word = input('Enter word, or a "." to indicate you are finished: ')
-        print(word)
 
     # If the input is a single period: end the game (break out of the loop)
         if word == ".":
