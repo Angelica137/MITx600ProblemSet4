@@ -241,7 +241,7 @@ def playHand(hand, wordList, n):
     # If the input is a single period: end the game (break out of the loop)
         if word == ".":
             print("Goodbye! Total score: " + str(totalScore) + " points.")
-            raise SystemExit
+            return
 
     # Otherwise (the input is not a single period):
         else:
@@ -293,4 +293,4 @@ if __name__ == '__main__':
 
 
 wordList = loadWords()
-playHand({'w': 1, 's': 1, 't': 2, 'a': 1, 'o': 1, 'f': 1}, wordList, 7)
+playHand({'i': 1, 'o': 1, 'q': 1}, wordList, 7)
