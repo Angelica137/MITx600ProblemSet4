@@ -76,3 +76,5 @@ for problem 3: This function (isValidWord) shouldn't use the function 'updateHan
 Problem 4: Implement the function calcualteHandlen that returns the number of letters in the current hand.
 
 Problem 5: Implement the playHand function to allow the user to play out a single hand.
+
+Problem 6: Implement the playGame function. Remove the code that is currently uncommented in the playGame body. Read through the specification and make sure you understand what this function accomplishes. For the game, you should use the HAND_SIZE constant to determine the number of cards in a hand.
