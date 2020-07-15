@@ -281,7 +281,53 @@ def playGame(wordList):
     """
     # TO DO ... <-- Remove this comment when you code this function
     # <-- Remove this line when you code the function
-    print("playGame not yet implemented.")
+    #print("playGame not yet implemented.")
+    play = input(
+        "Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
+    while play != 'r' and play != 'n' and play != 'e':
+        print('Invalid command.')
+        play = input(
+            "Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
+    if play == 'r':
+        while play == 'r':
+            print('You have not played a hand yet. Please play a new hand first!')
+            play = input(
+                "Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
+        if play == 'n':
+            while play == 'n':
+                hand = dealHand(HAND_SIZE)
+                playHand(hand, wordList, HAND_SIZE)
+                play = input(
+                    "Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
+            if play == 'r':
+                hand = dealHand(HAND_SIZE)
+                playHand(hand, wordList, HAND_SIZE)
+                SystemExit
+            elif play == 'e':
+                SystemExit
+            else:
+                while play != 'r' and play != 'n' and play != 'e':
+                    print('Invalid command.')
+                    play = input(
+                        "Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
+        elif play == 'e':
+            SystemExit
+    elif play == 'e':
+        SystemExit
+    elif play == 'n':
+        while play == 'n':
+            hand = dealHand(HAND_SIZE)
+            playHand(hand, wordList, HAND_SIZE)
+            play = input(
+                "Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
+        if play == 'r':
+            hand = dealHand(HAND_SIZE)
+            playHand(hand, wordList, HAND_SIZE)
+    else:
+        while play != 'r' and play != 'n' and play != 'e':
+            print('Invalid command.')
+            play = input(
+                "Enter n to deal a new hand, r to replay the last hand, or e to end game: ")
 
 
 #
@@ -290,7 +336,3 @@ def playGame(wordList):
 if __name__ == '__main__':
     wordList = loadWords()
     playGame(wordList)
-
-
-wordList = loadWords()
-playHand({'i': 1, 'o': 1, 'q': 1}, wordList, 7)
