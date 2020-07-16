@@ -78,3 +78,14 @@ Problem 4: Implement the function calcualteHandlen that returns the number of le
 Problem 5: Implement the playHand function to allow the user to play out a single hand.
 
 Problem 6: Implement the playGame function. Remove the code that is currently uncommented in the playGame body. Read through the specification and make sure you understand what this function accomplishes. For the game, you should use the HAND_SIZE constant to determine the number of cards in a hand.
+
+Problem 7: playing against the machine.
+Use functions compChooseWord and compPlayHand
+
+compChooseWord lets the computer choose a word and finds the word tha would give the highest score by iterating thorugh the list of words
+
+compPlayHand lets the computer play
+
+write code that implements the playGamefunction
+
+This is a modified version of the playHand function from ps4a.

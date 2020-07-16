@@ -277,7 +277,7 @@ def playGame(wordList):
       * If the user inputs 'e', exit the game.
       * If the user inputs anything else, tell them their input was invalid.
 
-    2) When done playing the hand, repeat from step 1
+    2) When done playing the hand, repeat from step 1    
     """
     # TO DO ... <-- Remove this comment when you code this function
     # <-- Remove this line when you code the function
